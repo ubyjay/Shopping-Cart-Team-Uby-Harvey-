@@ -40,6 +40,13 @@ function ready (){
         var button = addCart[i];
         button.addEventListener('click',addCartClicked) 
     }
+
+    //Buy button
+    document.getElementsByClassName("btn-buy")[0].addEventListener("click",buyButtonCicked)
+}
+// Buy Button Function
+function buyButtonCicked (){
+    alert("Your order is placed");
 }
 // REMOVE ITEMS FROM CART(making fuction removeCartItem)
 function removeCartItem (event){
